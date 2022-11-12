@@ -47,6 +47,7 @@ This script is setup for my mh-scrapyardMLO
 ![foto1](https://www.madirc.nl/fivem/scrapyardMLO/Schermafbeelding%202022-11-10%20152904.png)
 
 
+
 # To setup other car lifts in your world
 ```lua
 [1] = {               	                     -- this and the id, must be the same number. (a unique number)
