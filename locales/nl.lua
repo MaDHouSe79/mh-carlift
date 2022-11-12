@@ -8,6 +8,7 @@ local Translations = {
         ['elevator_up'] = "De lift omhoog",
         ['elevator_down'] = "Lift naar beneden",
         ['elevator_stop'] = "Stop de Lift",
+        ['press_to_open'] = "[%{key}] - Lift Menu ID(%{id})",
         ['menu_close'] = "Sluit",
     },
 }
