@@ -8,6 +8,7 @@ local Translations = {
         ['elevator_up'] = "Up the elevator",
         ['elevator_down'] = "Down the elevator",
         ['elevator_stop'] = "Stop the elevator",
+        ['press_to_open'] = "[%{key}] - Lift Menu ID(%{id})",
         ['menu_close'] = "Close", 
     },
 }
