@@ -84,7 +84,7 @@ end)
 ```
 
 # Example how to use this in other scripts, to interact with the lift.
-- if you have a other script and you want to move the lift up, you can use this.
+- if you have a other script and you want to move the lift up or down, you can use this.
 ```lua
 local data = {}
 data = {handle = "up", id = id} end   -- go up
