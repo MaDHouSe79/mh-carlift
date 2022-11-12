@@ -19,6 +19,9 @@ Config.BoxOffset         = {["x"] = 0.0, ["y"] = -3.3, ["z"] = -0.7, ["h"] = 0.0
 --
 Config.UseAsJob          = false -- job access only. (the jobs you add in you lift setup)
 --
+Config.InteractButton    = 38 -- E
+Config.MenuButtonDisplay = "E"
+--
 Config.Fontawesome = {
     close_menu = "fa-solid fa-angle-left",
     item_menu  = "fa-solid fa-angle-right",
