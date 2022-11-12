@@ -261,16 +261,6 @@ RegisterNetEvent('mh-carlift:client:elevatorStop', function(data)
 	elevatorUp = false
 	elevatorDown = false
 end)
---[[
-Citizen.CreateThread(function()
-    while true do
-		Citizen.Wait(0)
-		local id, _, entity, _ = GetClosestLiftObject()
-		current_list_id = id
-		Wait(100)
-	end
-end)
-]]--
 
 Citizen.CreateThread(function()
     while true do
