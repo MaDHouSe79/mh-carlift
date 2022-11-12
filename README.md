@@ -13,6 +13,9 @@
   <a href="https://github.com/MaDHouSe79/mh-carlift/stargazers">
     <img src="https://img.shields.io/github/stars/MaDHouSe79/mh-carlift"/> 
   </a>
+  <a href="https://github.com/MaDHouSe79/mh-carlift/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/MaDHouSe79/mh-carlift?color=black"/> 
+  </a>  
 </p>
 
 <p align="center">
