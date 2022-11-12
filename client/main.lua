@@ -97,7 +97,7 @@ local function CreatePoles(id, elevatorProp)
 		end
 
 		-- left front pole
-		local poleOffset1 = GetOffsetFromEntityInWorldCoords(elevatorProp, 1.43, -2.880, -0.5)
+		local poleOffset1 = GetOffsetFromEntityInWorldCoords(elevatorProp, 1.43, -2.880, Config.PoleZOffzet)
 		local Pole1Coords = vector3(poleOffset1.x, poleOffset1.y  , poleOffset1.z)
 		local pole1 = createObject(polemodel, Pole1Coords.x, Pole1Coords.y, Pole1Coords.z)
 		SetEntityHeading(pole1, PropHeading - 180)
@@ -105,7 +105,7 @@ local function CreatePoles(id, elevatorProp)
 		FreezeEntityPosition(pole1, true)
 
 		-- right front pole --
-		local poleOffset2 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, -2.880, -0.5)
+		local poleOffset2 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, -2.880, Config.PoleZOffzet)
 		local Pole2Coords = vector3(poleOffset2.x, poleOffset2.y, poleOffset2.z)
 		local pole2 = createObject(polemodel, Pole2Coords.x, Pole2Coords.y, Pole2Coords.z)
 		SetEntityHeading(pole2, PropHeading)
@@ -113,7 +113,7 @@ local function CreatePoles(id, elevatorProp)
 		FreezeEntityPosition(pole2, true)
 
 		-- right rear pole --
-		local poleOffset3 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, 2.880, -0.5)
+		local poleOffset3 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, 2.880, Config.PoleZOffzet)
 		local Pole3Coords = vector3(poleOffset3.x, poleOffset3.y , poleOffset3.z)
 		local pole3 = createObject(polemodel, Pole3Coords.x, Pole3Coords.y, Pole3Coords.z)
 		SetEntityHeading(pole3, PropHeading)
@@ -121,7 +121,7 @@ local function CreatePoles(id, elevatorProp)
 		FreezeEntityPosition(pole3, true)
 
 		-- left rear pole
-		local poleOffset3 = GetOffsetFromEntityInWorldCoords(elevatorProp, 1.43, 2.880, -0.5)
+		local poleOffset3 = GetOffsetFromEntityInWorldCoords(elevatorProp, 1.43, 2.880, Config.PoleZOffzet)
 		local Pole4Coords = vector3(poleOffset3.x, poleOffset3.y , poleOffset3.z)
 		local pole4 = createObject(polemodel, Pole4Coords)
 		SetEntityHeading(pole4, PropHeading - 180)
