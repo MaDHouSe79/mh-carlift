@@ -89,6 +89,18 @@ data = {handle = "stop", id = id} end -- stop
 TriggerServerEvent('mh-carlift:server:use', data) -- take the data you need
 ```
 
+## Contributers
+<a href="https://github.com/MaDHouSe79/mh-carlift/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=MaDHouSe79/mh-carlift" />
+</a>
+
+## 🐞 Any bugs issues or suggestions, let my know. 👊😎
+
+## 🙈 Youtube & Discord
+- [Youtube](https://www.youtube.com/@MaDHouSe79) for videos
+- [Discord](https://discord.gg/cEMSeE9dgS)
+
+
 # LICENSE
 [GPL LICENSE](./LICENSE)<br />
 &copy; [MaDHouSe79](https://www.youtube.com/@MaDHouSe79)
