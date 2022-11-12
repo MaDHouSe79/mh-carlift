@@ -312,7 +312,7 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if isInElevatorZone then
-			if IsControlJustReleased(0, 38) then
+			if IsControlJustReleased(0, Config.InteractButton) then
 				local player = PlayerPedId()
 				if not IsPedInAnyVehicle(player) then
 					local id, _, entity, _ = GetClosestLiftObject()
