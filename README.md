@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/github/issues/MaDHouSe79/mh-carlift"/> 
   </a>
     <a href="https://github.com/MaDHouSe79/mh-carlift/watchers">
-    <img src="https://img.shields.io/github/watchers/MaDHouSe79/mh-lootpeds"/> 
+    <img src="https://img.shields.io/github/watchers/MaDHouSe79/mh-carlift"/> 
   </a> 
   <a href="https://github.com/MaDHouSe79/mh-carlift/network/members">
     <img src="https://img.shields.io/github/forks/MaDHouSe79/mh-carlift"/> 
