@@ -88,3 +88,7 @@ data = {handle = "stop", id = id} end -- stop
 
 TriggerServerEvent('mh-carlift:server:use', data) -- take the data you need
 ```
+
+# LICENSE
+[GPL LICENSE](./LICENSE)<br />
+&copy; [MaDHouSe79](https://www.youtube.com/@MaDHouSe79)
