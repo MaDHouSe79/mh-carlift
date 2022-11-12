@@ -22,6 +22,8 @@ Config.UseAsJob          = false -- job access only. (the jobs you add in you li
 Config.InteractButton    = 38 -- E
 Config.MenuButtonDisplay = "E"
 --
+Config.PoleZOffzet       = 0.0
+--
 Config.Fontawesome = {
     close_menu = "fa-solid fa-angle-left",
     item_menu  = "fa-solid fa-angle-right",
