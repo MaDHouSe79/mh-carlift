@@ -42,10 +42,13 @@ This script is setup for my mh-scrapyardMLO
  - don't set the speed for the carlift too high.
  
  
+
 ## 📸 Screenshot 👊😁👍
 ![foto1](https://www.madirc.nl/fivem/scrapyardMLO/Schermafbeelding%202022-11-10%20152947.png)
 ![foto1](https://www.madirc.nl/fivem/scrapyardMLO/Schermafbeelding%202022-11-10%20152904.png)
 
+## Video
+![Youtube](https://www.youtube.com/watch?v=hdZKEUiX4lI)
 
 
 # To setup other car lifts in your world
