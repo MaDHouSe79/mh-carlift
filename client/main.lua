@@ -171,7 +171,7 @@ local function CreateBoxZone(id, x, y, z)
 			isInElevatorZone = true
 			if not Config.UseTarget then
 				if Config.Elevators[id].openMenu then
-					exports['qb-core']:DrawText("[E] - Lift Menu ID(" .. id..")", 'left')
+					exports['qb-core']:DrawText(Lang:t('menu.press_to_open', {id = id, key = Config.MenuButtonDisplay}), 'left')
 				end
 			end
 		else
