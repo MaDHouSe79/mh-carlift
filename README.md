@@ -50,6 +50,7 @@ This script is setup for my mh-scrapyardMLO download [here](https://github.com/M
 
 
 # To setup other car lifts in your world
+-- if your Z axes in your coords is 5.0 your min is 5.0 and befmore min is 4.5 or 4.0 same for the up but the other way...
 ```lua
 [1] = {               	                     -- this and the id, must be the same number. (a unique number)
     id        = 1,    	                     -- this needs the id from above. 
