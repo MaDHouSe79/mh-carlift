@@ -30,7 +30,7 @@ This add multi fully fonctional car lifts in your world
 you can add more if you want.
 
 ***
-This script is setup for my mh-scrapyardMLO
+This script is setup for my mh-scrapyardMLO download [here](https://github.com/MaDHouSe79/mh-scrapyardMLO)
 ***
 
 # Yes i know this 😁
