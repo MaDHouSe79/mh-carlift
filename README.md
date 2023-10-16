@@ -67,35 +67,7 @@ This script is setup for my mh-scrapyardMLO download [here](https://github.com/M
 }, 
 ```
 
-# Use the exports to get the Closest Lift ID
-```lua
-local id, distance, entity, coords = exports['mh-carlift']:GetClosestLiftObject()`
-```
-
-## Example to get the Closest Lift
-```lua
-Citizen.CreateThread(function()
-    while true do
-        Citizen.Wait(0)
-	local id, dist, entity, coords = exports['mh-carlift']:GetClosestLiftObject()
-	local elevatorCoords = GetEntityCoords(entity, false) -- to get the closest car lift near you
-	Wait(100)
-    end
-end)
-```
-
-# Example how to use this in other scripts, to interact with the lift.
-- if you have a other script and you want to move the lift up or down, you can use this.
-```lua
-local data = {}
-data = {handle = "up", id = id} end   -- go up
-data = {handle = "down", id = id} end -- go down
-data = {handle = "stop", id = id} end -- stop
-
-TriggerServerEvent('mh-carlift:server:use', data) -- take the data you need
-```
-
-## Contributers
+# Contributers
 <a href="https://github.com/MaDHouSe79/mh-carlift/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=MaDHouSe79/mh-carlift" />
 </a>
