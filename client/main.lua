@@ -12,10 +12,15 @@ local elevatorProp = nil
 local attachedVehicle = nil
 local isAttach = false
 
+--- Get Distance
+---@param pos1 vector
+---@param pos2 vector
 local function GetDistance(pos1, pos2)
     return #(vector3(pos1.x, pos1.y, pos1.z) - vector3(pos2.x, pos2.y, pos2.z))
 end
 
+--- Prepare Model
+---@param model string
 local function PrepareModel(model)
     RequestModel(model)
     while (not HasModelLoaded(model)) do
@@ -23,6 +28,8 @@ local function PrepareModel(model)
     end
 end
 
+--- Elevator Menu
+---@param id number
 local function ElevatorMenu(id)
     QBCore.Functions.TriggerCallback("mh-carlift:server:hasJob", function(hasJob)
         if hasJob then
@@ -90,6 +97,11 @@ local function ElevatorMenu(id)
     end, id)
 end
 
+--- create Object
+---@param model string
+---@param x number
+---@param y number
+---@param z number
 local function createObject(model, x, y, z)
     PrepareModel(model)
     local obj = CreateObject(model, x, y, z, true)
@@ -97,6 +109,9 @@ local function createObject(model, x, y, z)
     return obj
 end
 
+--- Create Poles
+---@param id number
+---@param elevatorProp string
 local function CreatePoles(id, elevatorProp)
     local polemodel = GetHashKey(Config.LiftPoleModel)
     PrepareModel(polemodel)
@@ -153,6 +168,12 @@ local function CreatePoles(id, elevatorProp)
     end
 end
 
+--- Create Car Lift
+---@param id number
+---@param propName string
+---@param x number
+---@param y number
+---@param z number
 local function CreateCarLift(id, propName, x, y, z)
     local model = GetHashKey(propName)
     if IsModelValid(model) then
@@ -177,6 +198,11 @@ local function CreateCarLift(id, propName, x, y, z)
     end
 end
 
+--- Create BoxZone
+---@param id number
+---@param x number
+---@param y number
+---@param z number
 local function CreateBoxZone(id, x, y, z)
     boxzones["boxzone_" .. id] = {}
     boxzones["boxzone_" .. id].zone = BoxZone:Create(vector2(x, y), Config.Elevators[id].workarea.length,
@@ -218,11 +244,18 @@ local function CreateBoxZone(id, x, y, z)
     end)
 end
 
+--- Spawn Prop
+---@param id number
+---@param propName string
+---@param x number
+---@param y number
+---@param z number
 local function SpawnProp(id, propName, x, y, z)
     CreateCarLift(id, propName, x, y, z)
     CreateBoxZone(id, x, y, z)
 end
 
+--- Get Closest Lift Object
 local function GetClosestLiftObject()
     local pos = GetEntityCoords(PlayerPedId(), true)
     local current = nil
@@ -249,6 +282,7 @@ local function GetClosestLiftObject()
 end
 exports('GetClosestLiftObject', GetClosestLiftObject)
 
+--- Clear All Elevator Areas
 local function ClearAllElevatorAreas()
     for i = 1, #Config.Elevators do
         ClearAreaOfObjects(vector3(Config.Elevators[i].coords.x, Config.Elevators[i].coords.y,
@@ -256,6 +290,8 @@ local function ClearAllElevatorAreas()
     end
 end
 
+--- Get Vehicle Model
+---@param vehicle number
 local function GetVehicleModel(vehicle)
     local model = nil
     local props = QBCore.Functions.GetVehicleProperties(vehicle)
