@@ -29,9 +29,7 @@
 This add multi fully fonctional car lifts in your world
 you can add more if you want.
 
-***
-This script is setup for my mh-scrapyardMLO download [here](https://github.com/MaDHouSe79/mh-scrapyardMLO)
-***
+
 
 # Yes i know this 😁
 1. Yes, there will always be platforms on the ground even if you use the car lift,
@@ -43,11 +41,6 @@ This script is setup for my mh-scrapyardMLO download [here](https://github.com/M
  
 ## Video
 [Demo](https://www.youtube.com/watch?v=hdZKEUiX4lI)
-
-## 📸 Screenshot 👊😁👍
-![foto1](https://www.madirc.nl/fivem/scrapyardMLO/Schermafbeelding%202022-11-10%20152947.png)
-![foto1](https://www.madirc.nl/fivem/scrapyardMLO/Schermafbeelding%202022-11-10%20152904.png)
-
 
 # To setup other car lifts in your world
 -- if your Z axes in your coords is 5.0 your min is 5.0 and befmore min is 4.5 or 4.0 same for the up but the other way...
@@ -74,9 +67,8 @@ This script is setup for my mh-scrapyardMLO download [here](https://github.com/M
 
 ## 🐞 Any bugs issues or suggestions, let my know. 👊😎
 
-## 🙈 Youtube & Discord
+## 🙈 Youtube
 - [Youtube](https://www.youtube.com/@MaDHouSe79) for videos
-- [Discord](https://discord.gg/cEMSeE9dgS)
 
 
 # LICENSE
