@@ -8,7 +8,6 @@ local elevatorUp = false
 local elevatorDown = false
 local isInElevatorZone = false
 local elevatorProp = nil
-
 local attachedVehicle = nil
 local isAttach = false
 
@@ -142,7 +141,7 @@ local function CreatePoles(id, elevatorProp)
         SetEntityCollision(pole1, true, true)
         FreezeEntityPosition(pole1, true)
 
-        -- right front pole --
+        -- right front pole
         local poleOffset2 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, -2.880, Config.PoleZOffzet)
         local Pole2Coords = vector3(poleOffset2.x, poleOffset2.y, poleOffset2.z)
         local pole2 = createObject(polemodel, Pole2Coords.x, Pole2Coords.y, Pole2Coords.z)
@@ -150,7 +149,7 @@ local function CreatePoles(id, elevatorProp)
         SetEntityCollision(pole2, true, true)
         FreezeEntityPosition(pole2, true)
 
-        -- right rear pole --
+        -- right rear pole
         local poleOffset3 = GetOffsetFromEntityInWorldCoords(elevatorProp, -1.43, 2.880, Config.PoleZOffzet)
         local Pole3Coords = vector3(poleOffset3.x, poleOffset3.y, poleOffset3.z)
         local pole3 = createObject(polemodel, Pole3Coords.x, Pole3Coords.y, Pole3Coords.z)
@@ -181,7 +180,7 @@ local function CreateCarLift(id, propName, x, y, z)
         local elevatorProp = createObject(model, x, y, z)
         SetEntityCollision(elevatorProp, true, true)
         FreezeEntityPosition(elevatorProp, true)
-        SetEntityCoords(elevatorProp, x, y, z, false, false, false, false) -- Patch un bug pour certains props.
+        SetEntityCoords(elevatorProp, x, y, z, false, false, false, false)
         SetEntityRotation(elevatorProp, 0.0, 0.0, 0.0, 4, false)
         SetEntityHeading(elevatorProp, Config.Elevators[id].coords.h)
         -- Create poles
