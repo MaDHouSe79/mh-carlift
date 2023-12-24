@@ -2,7 +2,6 @@
 --[[             MH Car Lift Script by MaDHouSe            ]] --
 --[[ ===================================================== ]] --
 print("^2MH^7-^2CarLift^7 ^7v^41^7.^40 ^7-^2 by ^1MaDHouSe^7")
-
 local QBCore = exports['qb-core']:GetCoreObject()
 local elevators = {}
 
@@ -41,13 +40,7 @@ end)
 
 RegisterNetEvent('mh-carlift:server:use', function(data)
     local src = source
-    if data.handle == "up" then
-        TriggerClientEvent('mh-carlift:client:elevatorUp', src, data)
-    end
-    if data.handle == "down" then
-        TriggerClientEvent('mh-carlift:client:elevatorDown', src, data)
-    end
-    if data.handle == "stop" then
-        TriggerClientEvent('mh-carlift:client:elevatorStop', src, data)
-    end
+    if data.handle == "up" then TriggerClientEvent('mh-carlift:client:elevatorUp', src, data) end
+    if data.handle == "down" then TriggerClientEvent('mh-carlift:client:elevatorDown', src, data) end
+    if data.handle == "stop" then TriggerClientEvent('mh-carlift:client:elevatorStop', src, data) end
 end)
