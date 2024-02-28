@@ -28,7 +28,8 @@
 ## mh-carlift
 This add multi fully fonctional car lifts in your world
 you can add more if you want.
-
+im the folder [mlo] you get a free scrapyard
+where the lifts are already in the mh-carlist config and working.
 
 
 # Yes i know this 😁
