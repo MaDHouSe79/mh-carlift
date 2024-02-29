@@ -305,6 +305,7 @@ RegisterNetEvent('mh-carlift:client:connect', function(lift)
             attachedVehicle = vehicle
             local model = GetVehicleModel(vehicle)
             local offset = Config.VehicleAttachOffset[model]
+            if offset == nil then offset = { x = 0, y = 0, z = 0.36 } end
             AttachEntityToEntity(vehicle, lift, 11816, offset.x, offset.y, offset.z, 0.0, 0.0, 0.0, false, false, false, true, 2, true)
             isAttach = true
         end
