@@ -305,6 +305,12 @@ RegisterNetEvent('mh-carlift:client:connect', function(lift)
             attachedVehicle = vehicle
             local model = GetVehicleModel(vehicle)
             local offset = Config.VehicleAttachOffset[model]
+            if offset == nil then
+                offset = {}
+                offset.x = 0
+                offset.y = 0
+                offset.z = 0.36
+            end
             AttachEntityToEntity(vehicle, lift, 11816, offset.x, offset.y, offset.z, 0.0, 0.0, 0.0, false, false, false, true, 2, true)
             isAttach = true
         end
@@ -400,6 +406,12 @@ Citizen.CreateThread(function()
                         Wait(2500)
                         local model = GetVehicleModel(vehicle)
                         local offset = Config.VehicleAttachOffset[model]
+                        if offset == nil then
+                            offset = {}
+                            offset.x = 0
+                            offset.y = 0
+                            offset.z = 0.36
+                        end
                         AttachEntityToEntity(vehicle, entity, 11816, offset.x, offset.y, offset.z, 0.0, 0.0, 0.0, false, false, false, true, 2, true)
                         isAttach = true
                     end
