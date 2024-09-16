@@ -42,19 +42,19 @@ Config.Fontawesome = {
 
 Config.Elevators = {
     -- scraptard pos 1 (in de hal) (left)
-    [1] = { -- this and the id, must be the same number.
-        id = 1, -- this needs the id from above. 
-        min = 47.37, -- lower position of the lift
-        max = 49.45, -- higher position of the lift (z from the main coords)
-        beforemax = 45.53, -- detector for speed_up_slow befor the final point
-        beforemin = 48.00, -- detector for speed_down_slow befor the final point
-        entity = nil, -- dont change this
-        needPoles = true, -- if dont have poles set this true
-        openMenu = true, -- if you want to have a menu on the lift, false if you have other plans with it. (triggering by other scripts)
+    [1] = {                -- This and the id, must be the same number.
+        id = 1,            -- This needs the id from above. 
+        min = 47.37,       -- Lower position of the lift
+        max = 49.45,       -- Higher position of the lift (z from the main coords)
+        beforemax = 45.53, -- Detector for speed_up_slow befor the final point
+        beforemin = 48.00, -- Detector for speed_down_slow befor the final point
+        entity = nil,      -- Dont change this
+        needPoles = true,  -- Of dont have poles set this false
+        openMenu = true,   -- Of you want to have a menu on the lift, false if you have other plans with it. (triggering by other scripts)
         workarea = {
-            length = 7.0,
-            wide = 7.0
-        }, -- length and wide of the box zone
+            length = 7.0,  -- Length of the box zone
+            wide = 7.0     -- Wide of the box zone
+        },                 
         job = {"mechanic"}, -- job access
         coords = {
             ["x"] = 2345.31,
